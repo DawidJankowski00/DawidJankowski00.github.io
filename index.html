@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawid Jankowski — .NET / Python Developer</title>
+  <meta name="description" content="Portfolio i CV — Dawid Jankowski, .NET / Python Developer. C#, .NET, Blazor, Python, PostgreSQL, LLM." />
+  <meta property="og:title" content="Dawid Jankowski — .NET / Python Developer" />
+  <meta property="og:description" content="Portfolio / CV — C#, .NET, Blazor, Python, PostgreSQL, LLM." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236d5dfc'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>DJ</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">DJ<span>.</span></a>
+      <nav>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#profil" data-i18n="nav.profile">Profil</a></li>
+          <li><a href="#doswiadczenie" data-i18n="nav.experience">Doświadczenie</a></li>
+          <li><a href="#projekty" data-i18n="nav.projects">Projekty</a></li>
+          <li><a href="#umiejetnosci" data-i18n="nav.skills">Umiejętności</a></li>
+          <li><a href="#wyksztalcenie" data-i18n="nav.education">Wykształcenie</a></li>
+          <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn lang-btn" id="langToggle" aria-label="Switch to English">EN</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Przełącz motyw" data-i18n-aria="aria.theme">◐</button>
+        <button class="icon-btn nav__burger" id="burger" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__hello mono" data-i18n="hero.hello">&gt; Cześć, jestem</p>
+        <h1 class="hero__name">Dawid Jankowski</h1>
+        <h2 class="hero__role"><span class="gradient">.NET / Python Developer</span></h2>
+        <p class="hero__lead" data-i18n="hero.lead">
+          Tworzę oprogramowanie w C# / .NET i Pythonie oraz wykorzystuję modele językowe (LLM)
+          w praktycznych rozwiązaniach.
+        </p>
+        <div class="hero__cta">
+          <a href="#projekty" class="btn btn--primary" data-i18n="hero.ctaProjects">Zobacz projekty</a>
+          <a href="mailto:Dawid.Jan.Jankowski00@gmail.com" class="btn btn--ghost" data-i18n="hero.ctaMail">Napisz do mnie</a>
+          <button class="btn btn--ghost" onclick="window.print()" data-i18n="hero.ctaPrint">Pobierz / drukuj CV</button>
+        </div>
+        <ul class="hero__meta">
+          <li>📍 Dziemiany</li>
+          <li data-i18n="hero.metaEdu">🎓 Informatyka, Uniwersytet Gdański</li>
+          <li data-i18n="hero.metaWork">💼 Freelance od 2023</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="section reveal">
+      <div class="container">
+        <h3 class="section__title"><span class="mono">01.</span> <span data-i18n="nav.profile">Profil</span></h3>
+        <p class="profile" data-i18n="profile.text">
+          Absolwent informatyki (licencjat i magister, Uniwersytet Gdański) z praktyką w tworzeniu
+          oprogramowania dla firm jako freelancer. Pracuję w .NET (C#) i Pythonie oraz wykorzystuję
+          modele językowe (LLM) w tworzonych rozwiązaniach. Szukam pracy w zespole programistycznym,
+          w której będę się rozwijać i dostarczać działające rozwiązania.
+        </p>
+      </div>
+    </section>
+
+    <!-- DOŚWIADCZENIE -->
+    <section id="doswiadczenie" class="section reveal">
+      <div class="container">
+        <h3 class="section__title"><span class="mono">02.</span> <span data-i18n="nav.experience">Doświadczenie</span></h3>
+        <div class="timeline">
+          <article class="card timeline__item">
+            <div class="timeline__head">
+              <h4 data-i18n="exp.role">Programista freelance</h4>
+              <span class="badge" data-i18n="exp.period">2023 – Teraz</span>
+            </div>
+            <p class="timeline__project" data-i18n="exp.project">
+              <strong>KAMADA</strong> – system zarządzania zamówieniami i dostaw kurierskich
+              <span class="muted">(projekt dla lokalnej firmy)</span>
+            </p>
+            <ul class="list">
+              <li data-i18n="exp.b1">Zaprojektowałem i napisałem od podstaw system do obsługi zamówień oraz dostaw kurierskich, wraz z optymalizacją tras.</li>
+              <li data-i18n="exp.b2">Aplikacja w architekturze modularnego monolitu na platformie .NET, z interfejsem w Blazor i bazą PostgreSQL.</li>
+              <li data-i18n="exp.b3">Uwierzytelnianie JWT, konfiguracja CI, dokumentacja projektu.</li>
+              <li data-i18n="exp.b4">Projekt zrealizowany samodzielnie, na zlecenie lokalnej firmy.</li>
+            </ul>
+            <div class="tags">
+              <span>.NET</span><span>C#</span><span>Blazor</span><span>PostgreSQL</span><span>JWT</span><span>CI</span><span>Modular monolith</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKTY -->
+    <section id="projekty" class="section reveal">
+      <div class="container">
+        <h3 class="section__title"><span class="mono">03.</span> <span data-i18n="nav.projects">Projekty</span></h3>
+        <div class="grid">
+          <article class="card project">
+            <div class="project__top"><span class="project__icon">🩸</span>
+              <a class="project__link" href="https://github.com/DawidJankowski00/GlucoBalanceApp" target="_blank" rel="noopener" aria-label="GlucoBalanceApp – GitHub">↗</a>
+            </div>
+            <h4>GlucoBalanceApp</h4>
+            <p data-i18n="proj.gluco">Projekt z CI, testami, dokumentacją decyzji architektonicznych (ADR) i README.</p>
+            <div class="tags"><span>CI</span><span data-i18n="tag.tests">Testy</span><span>ADR</span></div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top"><span class="project__icon">🚆</span>
+              <span class="badge badge--soft" data-i18n="proj.wipBadge">W trakcie rozwoju</span>
+            </div>
+            <h4>Transit Games</h4>
+            <p data-i18n="proj.transit">Projekt w trakcie rozwoju.</p>
+            <div class="tags"><span>WIP</span></div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top"><span class="project__icon">🧠</span></div>
+            <h4>Leetcode</h4>
+            <p data-i18n="proj.leetcode">Rozwiązania zadań algorytmicznych, ponad 350 commitów, regularna praktyka.</p>
+            <div class="tags"><span data-i18n="tag.algorithms">Algorytmy</span><span data-i18n="tag.ds">Struktury danych</span></div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top"><span class="project__icon">📱</span></div>
+            <h4 data-i18n="proj.mauiTitle">Aplikacje .NET MAUI</h4>
+            <p data-i18n="proj.maui">Aplikacje w .NET MAUI (projekty edukacyjne).</p>
+            <div class="tags"><span>.NET MAUI</span><span>C#</span></div>
+          </article>
+        </div>
+        <p class="center">
+          <a class="btn btn--ghost" href="https://github.com/DawidJankowski00" target="_blank" rel="noopener" data-i18n="proj.more">Więcej na GitHubie →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- UMIEJĘTNOŚCI -->
+    <section id="umiejetnosci" class="section reveal">
+      <div class="container">
+        <h3 class="section__title"><span class="mono">04.</span> <span data-i18n="nav.skills">Umiejętności</span></h3>
+        <div class="skills">
+          <div class="card skill"><h5 data-i18n="skills.langs">Języki i platformy</h5><div class="tags"><span>C#</span><span>.NET</span><span>Python</span></div></div>
+          <div class="card skill"><h5>Backend (.NET)</h5><div class="tags"><span>ASP.NET Core / Web API</span><span>Entity Framework Core</span><span>LINQ</span><span>REST API</span><span>SignalR</span><span>JWT</span><span>xUnit / NUnit</span></div></div>
+          <div class="card skill"><h5>Python</h5><div class="tags"><span>FastAPI / Flask</span><span>pandas / NumPy</span></div></div>
+          <div class="card skill"><h5 data-i18n="skills.web">Web i UI</h5><div class="tags"><span>Blazor</span><span>.NET MAUI</span><span>Angular</span></div></div>
+          <div class="card skill"><h5 data-i18n="skills.db">Bazy danych</h5><div class="tags"><span>PostgreSQL</span><span>SQLite</span></div></div>
+          <div class="card skill skill--wide"><h5 data-i18n="skills.ai">AI i LLM</h5><div class="tags"><span data-i18n="skills.llm">Wykorzystanie LLM w aplikacjach</span><span>Claude</span><span>Claude Code</span><span>Antigravity</span><span>ChatGPT / OpenAI API</span><span>Gemini</span><span>GitHub Copilot</span><span data-i18n="skills.ollama">Ollama / lokalne modele</span></div></div>
+          <div class="card skill"><h5 data-i18n="skills.devops">DevOps i chmura</h5><div class="tags"><span>Docker</span><span>GitHub Actions</span><span>CI</span><span>Azure</span><span>Linux / bash</span></div></div>
+          <div class="card skill"><h5 data-i18n="skills.tools">IDE i narzędzia</h5><div class="tags"><span>Visual Studio</span><span>Visual Studio Code</span><span>Git</span><span>GitHub</span><span>Swagger / OpenAPI</span></div></div>
+          <div class="card skill"><h5 data-i18n="skills.other">Inne</h5><div class="tags"><span data-i18n="skills.algo">Algorytmy i struktury danych</span><span data-i18n="skills.modular">Projektowanie systemów modułowych</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WYKSZTAŁCENIE + JĘZYKI -->
+    <section id="wyksztalcenie" class="section reveal">
+      <div class="container two-col">
+        <div>
+          <h3 class="section__title"><span class="mono">05.</span> <span data-i18n="nav.education">Wykształcenie</span></h3>
+          <ul class="edu">
+            <li class="card"><strong data-i18n="edu.ug">Uniwersytet Gdański</strong><span data-i18n="edu.msc">Informatyka, studia magisterskie</span></li>
+            <li class="card"><strong data-i18n="edu.ug">Uniwersytet Gdański</strong><span data-i18n="edu.bsc">Informatyka, studia licencjackie</span></li>
+            <li class="card"><strong data-i18n="edu.tech">Technikum informatyczne</strong><!-- TODO: nazwa szkoły, lata --></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="section__title"><span class="mono">06.</span> <span data-i18n="langs.title">Języki</span></h3>
+          <ul class="langs">
+            <li class="card"><div class="langs__row"><strong data-i18n="langs.pl">Polski</strong><span data-i18n="langs.native">ojczysty</span></div><div class="bar"><i style="--w:100%"></i></div></li>
+            <li class="card"><div class="langs__row"><strong data-i18n="langs.en">Angielski</strong><span>C2</span></div><div class="bar"><i style="--w:96%"></i></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section reveal">
+      <div class="container">
+        <div class="card contact">
+          <h3 class="section__title"><span class="mono">07.</span> <span data-i18n="nav.contact">Kontakt</span></h3>
+          <p data-i18n="contact.text">Szukam pracy w zespole programistycznym — chętnie porozmawiam.</p>
+          <div class="contact__items">
+            <a href="mailto:Dawid.Jan.Jankowski00@gmail.com" class="contact__item">
+              <span>✉️</span> Dawid.Jan.Jankowski00@gmail.com
+            </a>
+            <a href="tel:+48532239039" class="contact__item"><span>📞</span> +48 532 239 039</a>
+            <a href="https://github.com/DawidJankowski00" target="_blank" rel="noopener" class="contact__item">
+              <span>🐙</span> github.com/DawidJankowski00
+            </a>
+            <span class="contact__item"><span>📍</span> Dziemiany</span>
+          </div>
+          <button class="btn btn--primary copy" id="copyEmail" data-i18n="contact.copy">Kopiuj e-mail</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dawid Jankowski</p>
+      <p class="footer__rodo" data-i18n="footer.rodo">
+        Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji
+        procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).
+      </p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
