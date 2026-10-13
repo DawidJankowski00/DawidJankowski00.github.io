@@ -1,26 +1,26 @@
 # Dawid Jankowski — Portfolio / CV
 
-Statyczna strona z portfolio i CV (.NET / Python Developer). Czysty HTML, CSS i JS, bez żadnych zależności ani kroku budowania.
+A static portfolio and CV website (.NET / Python Developer). Pure HTML, CSS, and JS; no dependencies or build step.
 
-## Funkcje
-- Wersja polska i angielska (przycisk PL/EN; link do wersji angielskiej: `?lang=en`). Tłumaczenia są w `i18n.js`.
-- Ciemny i jasny motyw (wybór jest zapamiętywany)
-- Responsywny układ z menu mobilnym
-- Przycisk „Pobierz / drukuj CV”: wersja do druku jest sformatowana jako CV (Zapisz jako PDF)
+## Features
+- Polish and English versions (PL/EN toggle; link to English version: `?lang=en`). Translations are located in `i18n.js`.
+- Dark and light themes (selection is saved).
+- Responsive layout with a mobile menu.
+- "Download / Print CV" button: the print version is formatted as a CV (Save as PDF).
 
-## Uruchomienie lokalnie
-Otwórz plik `index.html` w przeglądarce.
+## Running locally
+Open the `index.html` file in your browser.
 
-## Publikacja na GitHub Pages
-1. Utwórz repozytorium `DawidJankowski00.github.io` (wtedy strona będzie pod `https://DawidJankowski00.github.io`)
-   albo dowolne inne (wtedy pod `https://DawidJankowski00.github.io/<nazwa-repo>`).
-2. Wypchnij pliki:
+## Publishing on GitHub Pages
+1. Create a repository named `DawidJankowski00.github.io` (the site will be available at `https://DawidJankowski00.github.io`)
+or any other name (the site will be available at `https://DawidJankowski00.github.io/<repo-name>`).
+2. Push the files:
    ```bash
    git init
-   git add .
+   git add . 
    git commit -m "Portfolio"
    git branch -M main
    git remote add origin https://github.com/DawidJankowski00/DawidJankowski00.github.io.git
    git push -u origin main
    ```
-3. W repozytorium: **Settings → Pages → Source: Deploy from a branch → `main` / `(root)`**.
+3. In the repository: **Settings → Pages → Source: Deploy from a branch → `main` / `(root)`**.
