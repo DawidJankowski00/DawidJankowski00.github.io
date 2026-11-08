@@ -67,6 +67,9 @@ const I18N = {
     "edu.msc": "MSc in Computer Science · 2023 – 2026",
     "edu.bsc": "BSc in Computer Science · 2020 – 2023",
 
+    "certs.title": "Certifications",
+    "certs.azureIssuer": "Microsoft and LinkedIn",
+
     "langs.title": "Languages",
     "langs.pl": "Polish",
     "langs.native": "native",
