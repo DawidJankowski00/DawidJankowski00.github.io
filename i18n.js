@@ -20,55 +20,58 @@ const I18N = {
     "nav.contact": "Contact",
 
     "hero.hello": "&gt; Hi, I'm",
-    "hero.lead": "I build software in C# / .NET and Python and use large language models (LLMs) in practical solutions.",
+    "hero.lead": "I build tested web and mobile applications in C# / .NET and Python and integrate large language models (LLMs) into real-world software.",
     "hero.ctaProjects": "View projects",
     "hero.ctaMail": "Get in touch",
     "hero.ctaPrint": "Download / print CV",
-    "hero.metaEdu": "🎓 Computer Science, University of Gdańsk",
-    "hero.metaWork": "💼 Freelancing since 2023",
+    "hero.metaLoc": "📍 Dziemiany, Poland",
+    "hero.metaEdu": "🎓 MSc in Computer Science, University of Gdańsk",
+    "hero.metaWork": "💼 .NET Developer, KAMADA (2023 – 2026)",
 
-    "profile.text": "Computer Science graduate (BSc and MSc, University of Gdańsk) with hands-on experience building software for businesses as a freelancer. I work with .NET (C#) and Python and use large language models (LLMs) in the solutions I build. I'm looking for a job in a development team where I can grow and deliver working solutions.",
+    "profile.text": ".NET (C#) and Python developer with an MSc in Computer Science from the University of Gdańsk. From 2023 to 2026, I single-handedly designed, deployed and maintained a production order management and route optimization system at KAMADA. I build thoroughly tested web and mobile applications (ASP.NET Core, FastAPI, Blazor, .NET MAUI) and integrate LLMs into real-world software (Ollama, OpenAI/Claude API).",
 
-    "exp.role": "Freelance Developer",
-    "exp.period": "2023 – Present",
-    "exp.project": '<strong>KAMADA</strong> – order management and courier delivery system <span class="muted">(project for a local company)</span>',
-    "exp.b1": "Designed and built from scratch a system for handling orders and courier deliveries, including route optimization.",
-    "exp.b2": "Modular monolith application on the .NET platform, with a Blazor front end and a PostgreSQL database.",
-    "exp.b3": "JWT authentication, CI setup, project documentation.",
-    "exp.b4": "Delivered independently, commissioned by a local company.",
+    "exp1.role": ".NET Developer (internal system) / Sales Specialist",
+    "exp1.company": '<strong>KAMADA</strong> – manufacturer and retailer of garden furniture, gazebos and canopies <span class="muted">· Dziemiany, Poland</span>',
+    "exp1.b1": "Designed, deployed and maintained, on my own, a production system for order management and courier delivery planning, automating the company's logistics processes.",
+    "exp1.b2": "Implemented a route optimization module (OSRM, Google Routes, Haversine) and a local AI assistant (Whisper + Ollama) that supports order entry.",
+    "exp1.b3": "Managed the company website and provided technical support for sales and customer orders.",
+    "exp2.role": "Sales and Production Associate",
+    "exp2.company": '<strong>KAMADA</strong> – manufacturer and retailer of garden furniture, gazebos and canopies <span class="muted">· Dziemiany, Poland</span>',
+    "exp2.b1": "Sales, direct customer contact and coordination of order fulfilment.",
+    "exp2.b2": "Production of garden furniture, gazebos and canopies (gained hands-on knowledge of production and logistics processes that later informed the design of a dedicated IT system).",
+    "exp3.role": "IT Intern",
+    "exp3.company": '<strong>Dziemiany Municipal Office</strong> <span class="muted">· Dziemiany, Poland</span>',
+    "exp3.b1": "Two one-month vocational internships (during technical high school and undergraduate studies).",
+    "exp3.b2": "Technical support for office staff, hardware diagnostics and repair, software installation and configuration.",
 
-    "proj.gluco": "Project with CI, tests, architecture decision records (ADR) and a README.",
+    "proj.kamadaTitle": "KAMADAv2 (Order and Route System)",
+    "proj.kamada": "Refined version of the order management and courier delivery system with route optimization that I built for KAMADA, published without any company data. Modular monolith (8 modules), REST API with JWT, Held–Karp and time-bounded heuristic algorithms with benchmarks, integration tests (Testcontainers) and a local AI assistant (Whisper + Ollama).",
+    "proj.gluco": "Web application supporting type 1 diabetes management: CGM sensor data import, analytics and PDF reports, a 30-minute glucose forecast (scikit-learn) and an LLM-based AI assistant (Ollama / Claude API) with 56 evaluation scenarios. Tests (pytest, Hypothesis), strict mypy, CI.",
     "proj.wipBadge": "In progress",
-    "proj.transit": "Project currently in development.",
-    "proj.leetcode": "Solutions to algorithmic problems, 350+ commits, regular practice.",
-    "proj.mauiTitle": ".NET MAUI apps",
-    "proj.maui": "Applications built with .NET MAUI (learning projects).",
+    "proj.transit": "Mobile app (Android / iOS) for outdoor games played using public transport. ASP.NET Core + SignalR game server in Docker, offline message queue, OpenStreetMap-based map and GPS route recording with GPX and GeoJSON export.",
+    "proj.leetcode": "Algorithmic problem solutions: 318 unique problems (230 solutions in Python, 158 in C#), 350+ commits of regular practice.",
     "proj.more": "More on GitHub →",
-    "tag.tests": "Tests",
     "tag.algorithms": "Algorithms",
-    "tag.ds": "Data structures",
 
-    "skills.langs": "Languages & platforms",
+    "skills.langs": "Programming languages",
     "skills.web": "Web & UI",
     "skills.db": "Databases",
-    "skills.llm": "Using LLMs in applications",
     "skills.ai": "AI & LLM",
-    "skills.ollama": "Ollama / local models",
-    "skills.devops": "DevOps & cloud",
-    "skills.tools": "IDEs & tools",
-    "skills.other": "Other",
-    "skills.algo": "Algorithms & data structures",
+    "skills.llm": "LLM integration in applications",
+    "skills.devops": "Cloud & DevOps",
+    "skills.tools": "Tools & other",
     "skills.modular": "Modular system design",
+    "skills.algo": "Algorithms and data structures",
 
     "edu.ug": "University of Gdańsk",
-    "edu.msc": "Computer Science, Master's degree",
-    "edu.bsc": "Computer Science, Bachelor's degree",
-    "edu.tech": "IT Technical Secondary School",
+    "edu.msc": "MSc in Computer Science · 2023 – 2026",
+    "edu.bsc": "BSc in Computer Science · 2020 – 2023",
 
     "langs.title": "Languages",
     "langs.pl": "Polish",
     "langs.native": "native",
     "langs.en": "English",
+    "langs.advanced": "advanced (C1)",
 
     "contact.text": "I'm looking for a job in a development team — happy to talk.",
     "contact.copy": "Copy e-mail",
@@ -94,6 +97,9 @@ function setLanguage(lang) {
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     el.innerHTML = t(el.dataset.i18n);
+  });
+  document.querySelectorAll("[data-i18n-href]").forEach((el) => {
+    el.setAttribute("href", t(el.dataset.i18nHref));
   });
   document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
     el.setAttribute("aria-label", t(el.dataset.i18nAria));
